@@ -29,7 +29,7 @@ public class LoginActivity extends Activity {
 
     private void setupButtons(){
         final Intent switchToEmployer = new Intent(this, EmployerActivity.class);
-        final Intent switchToEmployee = new Intent(this, EmployerActivity.class);
+        final Intent switchToEmployee = new Intent(this, EmployeeActivity.class);
 
         employerButton.setOnClickListener(new View.OnClickListener() {
             @Override
