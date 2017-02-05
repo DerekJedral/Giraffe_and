@@ -31,5 +31,11 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="34"/>
+        <fragment android:name="com.example.derek.giraffe_android.ProfileEditFragment"
+            android:id="@+id/list"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            tools:layout="@layout/profile_edit_fragment" />
     </LinearLayout>
 </RelativeLayout>
