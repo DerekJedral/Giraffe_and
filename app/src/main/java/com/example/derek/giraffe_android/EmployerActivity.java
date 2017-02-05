@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class EmployerActivity extends FragmentActivity {
+    LandingDefaultFragment landingDefaultFragment;
     MatcherFragment matcherFragment;
     MatchesFragment matchesFragment;
     Fragment settingFragment;
@@ -24,6 +25,7 @@ public class EmployerActivity extends FragmentActivity {
         fm  = this.getSupportFragmentManager();
         matcherFragment = new MatcherFragment();
         matchesFragment = new MatchesFragment();
+        landingDefaultFragment = new LandingDefaultFragment();
 
     }
 
@@ -34,7 +36,7 @@ public class EmployerActivity extends FragmentActivity {
             Log.d("Crash","matcherFragment is null");
         }
         FragmentTransaction ft = fm.beginTransaction();
-        ft.add(R.id.fragment_holder, matcherFragment).commit();
+        ft.add(R.id.fragment_holder, landingDefaultFragment).commit();
         final Button b1 = (Button)findViewById(R.id.finder);
         final Button b2 = (Button)findViewById(R.id.matches);
         b1.setOnClickListener(new View.OnClickListener() {

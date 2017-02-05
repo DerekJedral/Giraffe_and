@@ -15,6 +15,7 @@ import android.widget.Button;
 public class EmployeeActivity extends FragmentActivity {
     ProfileEditFragment profileEditFragment;
     LandingDefaultFragment landingDefaultFragment;
+    MatchesFragment matchesFragment;
     Fragment settingFragment;
     FragmentManager fm;
     @Override
@@ -24,6 +25,7 @@ public class EmployeeActivity extends FragmentActivity {
         fm  = this.getSupportFragmentManager();
         profileEditFragment = new ProfileEditFragment();
         landingDefaultFragment = new LandingDefaultFragment();
+        matchesFragment = new MatchesFragment();
     }
 
     @Override
@@ -35,13 +37,26 @@ public class EmployeeActivity extends FragmentActivity {
         FragmentTransaction ft = fm.beginTransaction();
         ft.add(R.id.fragment_holder, landingDefaultFragment).commit();
         final Button b1 = (Button)findViewById(R.id.profileSettings);
+        final Button b2 = (Button)findViewById(R.id.matches);
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 b1.setBackgroundColor(Color.parseColor("#999999"));
+                b2.setBackgroundColor(Color.parseColor("#444444"));
                 FragmentTransaction ft = fm.beginTransaction();
                 ft.setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left);
                 ft.replace(R.id.fragment_holder, profileEditFragment);
+                ft.commit();
+            }
+        });
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                b2.setBackgroundColor(Color.parseColor("#999999"));
+                b1.setBackgroundColor(Color.parseColor("#444444"));
+                FragmentTransaction ft = fm.beginTransaction();
+                ft.setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left);
+                ft.replace(R.id.fragment_holder, matchesFragment);
                 ft.commit();
             }
         });

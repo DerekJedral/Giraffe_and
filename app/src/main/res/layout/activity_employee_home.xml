@@ -4,13 +4,13 @@
     android:id="@+id/activity_employee_home"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_blue_dark"
+    android:background="#444444"
     tools:context="com.example.derek.giraffe_android.LoginActivity">
 
     <LinearLayout
         android:id="@+id/employee_toolbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:orientation="horizontal"
         android:weightSum="100">
         <Button
