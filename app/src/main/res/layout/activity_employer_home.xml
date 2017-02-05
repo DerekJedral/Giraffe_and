@@ -14,30 +14,30 @@
         android:orientation="horizontal"
         android:weightSum="100">
         <Button
-            android:textColor="#ffffff"
             android:id="@+id/finder"
             android:background="#444"
             android:text="Find Employees"
+            android:textColor="#ffffff"
             android:fontFamily="serif-monospace"
             android:textStyle="bold"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="33"/>
         <Button
-            android:textColor="#ffffff"
             android:id="@+id/matches"
             android:background="#444"
             android:text="My Matches"
+            android:textColor="#ffffff"
             android:fontFamily="serif-monospace"
             android:textStyle="bold"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="33"/>
         <Button
-            android:textColor="#ffffff"
-            android:id="@+id/settings"
+            android:id="@+id/profileSettings"
             android:background="#444"
             android:text="Settings"
+            android:textColor="#ffffff"
             android:fontFamily="serif-monospace"
             android:textStyle="bold"
             android:layout_width="0dp"

@@ -14,9 +14,11 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:scaleType="fitXY"
         android:src="@drawable/giraffe_logo"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="70dp"/>
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="70dp" />
     <Button
         android:id="@+id/employer_button_login"
         android:layout_above="@+id/employee_button_login"

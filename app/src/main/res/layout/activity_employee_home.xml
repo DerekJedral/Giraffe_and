@@ -49,13 +49,5 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/fragment_holder">
-        <!--
-        <fragment android:name="com.example.derek.giraffe_android.ProfileEditFragment"
-            android:id="@+id/list"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            tools:layout="@layout/profile_edit_fragment" />
-         -->
     </RelativeLayout>
 </RelativeLayout>

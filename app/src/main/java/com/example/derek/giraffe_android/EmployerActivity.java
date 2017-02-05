@@ -16,6 +16,7 @@ public class EmployerActivity extends FragmentActivity {
     LandingDefaultFragment landingDefaultFragment;
     MatcherFragment matcherFragment;
     MatchesFragment matchesFragment;
+    ProfileEditFragment profileEditFragment;
     Fragment settingFragment;
     FragmentManager fm;
     @Override
@@ -25,6 +26,7 @@ public class EmployerActivity extends FragmentActivity {
         fm  = this.getSupportFragmentManager();
         matcherFragment = new MatcherFragment();
         matchesFragment = new MatchesFragment();
+        profileEditFragment = new ProfileEditFragment();
         landingDefaultFragment = new LandingDefaultFragment();
 
     }
@@ -39,11 +41,13 @@ public class EmployerActivity extends FragmentActivity {
         ft.add(R.id.fragment_holder, landingDefaultFragment).commit();
         final Button b1 = (Button)findViewById(R.id.finder);
         final Button b2 = (Button)findViewById(R.id.matches);
+        final Button b3 = (Button)findViewById(R.id.profileSettings);
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 b1.setBackgroundColor(Color.parseColor("#999999"));
                 b2.setBackgroundColor(Color.parseColor("#444444"));
+                b3.setBackgroundColor(Color.parseColor("#444444"));
                 FragmentTransaction ft = fm.beginTransaction();
                 ft.setCustomAnimations(R.anim.slide_in_left, R.anim.slide_out_right);
                 ft.replace(R.id.fragment_holder, matcherFragment);
@@ -55,9 +59,22 @@ public class EmployerActivity extends FragmentActivity {
             public void onClick(View v) {
                 b2.setBackgroundColor(Color.parseColor("#999999"));
                 b1.setBackgroundColor(Color.parseColor("#444444"));
+                b3.setBackgroundColor(Color.parseColor("#444444"));
                 FragmentTransaction ft = fm.beginTransaction();
                 ft.setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left);
                 ft.replace(R.id.fragment_holder, matchesFragment);
+                ft.commit();
+            }
+        });
+        b3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                b3.setBackgroundColor(Color.parseColor("#999999"));
+                b1.setBackgroundColor(Color.parseColor("#444444"));
+                b2.setBackgroundColor(Color.parseColor("#444444"));
+                FragmentTransaction ft = fm.beginTransaction();
+                ft.setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left);
+                ft.replace(R.id.fragment_holder, profileEditFragment);
                 ft.commit();
             }
         });
