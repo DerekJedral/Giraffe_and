@@ -21,22 +21,26 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent">
             <ImageView
-            android:src="@drawable/login_background"
+                android:id="@+id/image1"
+            android:src="@drawable/image1"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:scaleType="fitXY"/>
             <ImageView
-                android:src="@drawable/image_1"
+                android:id="@+id/image2"
+                android:src="@drawable/image2"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:scaleType="fitXY"/>
             <ImageView
-                android:src="@drawable/image_2"
+                android:id="@+id/image3"
+                android:src="@drawable/image3"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:scaleType="fitXY"/>
             <ImageView
-                android:src="@drawable/image_3"
+                android:id="@+id/image4"
+                android:src="@drawable/image4"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:scaleType="fitXY"/>
@@ -47,7 +51,7 @@
             android:textColor="#FFFF"
             android:textStyle="bold"
             android:textSize="30sp"
-            android:text="Derek Jedral"
+            android:text="Maureen Gil"
             android:fontFamily="serif-monospace"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -72,12 +76,12 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="60">
+            android:layout_weight="50">
         <ImageView
             android:requiresFadingEdge="horizontal"
             android:id="@+id/profilePicture"
             android:alpha="0.7"
-            android:src="@drawable/face1"
+            android:src="@drawable/white_girl1"
             android:layout_gravity="center"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -92,12 +96,27 @@
                 android:layout_alignTop="@+id/profilePicture"
                 android:layout_marginRight="5dp"
                 android:layout_marginTop="5dp"/>
+            <TextView
+                android:id="@+id/nameAgain"
+                android:textColor="#FFFF"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:text="Maureen Gil"
+                android:fontFamily="serif-monospace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/profilePicture"/>
         </RelativeLayout>
-
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50"
+            android:orientation="vertical">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:weightSum="10">
+            android:weightSum="10"
+            android:layout_marginTop="20dp">
             <TextView
                 android:fontFamily="serif-monospace"
                 android:textColor="#FFFF"
@@ -108,6 +127,7 @@
                 android:layout_height="wrap_content"
                 android:text="Location"/>
             <TextView
+                android:id="@+id/location"
                 android:fontFamily="serif-monospace"
                 android:textColor="#FFFF"
                 android:textStyle="bold"
@@ -121,7 +141,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:weightSum="10">
+            android:weightSum="10"
+            android:layout_marginTop="20dp">
             <TextView
                 android:fontFamily="serif-monospace"
                 android:textColor="#FFFF"
@@ -132,6 +153,7 @@
                 android:layout_height="wrap_content"
                 android:text="Average Rating"/>
             <TextView
+                android:id="@+id/rating"
                 android:fontFamily="serif-monospace"
                 android:textColor="#FFFF"
                 android:textStyle="bold"
@@ -145,7 +167,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:weightSum="10">
+            android:weightSum="10"
+            android:layout_marginTop="20dp">
             <TextView
                 android:fontFamily="serif-monospace"
                 android:textColor="#FFFF"
@@ -156,6 +179,7 @@
                 android:layout_height="wrap_content"
                 android:text="Hourly Rate"/>
             <TextView
+                android:id="@+id/rate"
                 android:fontFamily="serif-monospace"
                 android:textColor="#FFFF"
                 android:textStyle="bold"
@@ -166,7 +190,34 @@
                 android:text="$40"
                 android:gravity="right"/>
         </LinearLayout>
-
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="30dp"
+            android:weightSum="3">
+            <ImageView
+                android:id="@+id/swipeLeft"
+                android:alpha="0.4"
+                android:src="@drawable/crossbox"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <ImageView
+                android:id="@+id/swipeMiddle"
+                android:alpha="0.4"
+                android:src="@drawable/question_mark"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <ImageView
+                android:id="@+id/swipeRight"
+                android:alpha="0.4"
+                android:src="@drawable/checkmark"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
     </LinearLayout>
 </LinearLayout>
 </ScrollView>

@@ -1,9 +1,357 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/main_background"/>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-</RelativeLayout>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+<TableRow android:layout_marginBottom="20dp">
+    <ImageView android:layout_width="50dp"/>
+    <TextView android:text="Grafer"
+        android:fontFamily="serif-monospace"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="34sp"
+        android:padding="3dip"/>
+</TableRow>
+    <TableRow >
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/asian_female2"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:text="Sandy Qin"
+            android:fontFamily="serif-monospace"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:padding="3dip" />
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:text="Sounds good! Let me k...."
+            android:gravity="right"
+            android:layout_marginRight="55dp"/>
+    </TableRow>
+    <TableRow>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/asian_male1"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:text="Evan Shang"
+            android:fontFamily="serif-monospace"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:padding="3dip" />
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:text=" friday is ok with me"
+            android:gravity="right"
+            android:padding="3dip"
+            android:layout_marginRight="55dp"/>
+    </TableRow>
+    <TableRow>
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/asian_male2"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:text="Edward Kim"
+            android:fontFamily="serif-monospace"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:padding="3dip" />
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:text=":)"
+            android:gravity="right"
+            android:padding="3dip"
+            android:layout_marginRight="55dp"/>
+    </TableRow>
+    <TableRow>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/white_male1"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:text="Derek Jedral"
+            android:fontFamily="serif-monospace"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:padding="3dip" />
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:text="$55 normal, $65 for we.."
+            android:gravity="right"
+            android:padding="3dip"
+            android:layout_marginRight="55dp"/>
+    </TableRow>
+    <TableRow>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/asian_male3"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:text="Dominic Ch.."
+            android:fontFamily="serif-monospace"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:padding="3dip" />
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:textStyle="italic"
+            android:text="No reply yet."
+            android:gravity="right"
+            android:layout_marginRight="55dp"/>
+    </TableRow>
+    <TableRow>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/white_girl1"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:text="Maureen Gil"
+            android:fontFamily="serif-monospace"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:padding="3dip" />
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:text=" I'll pass, ty for the offe..."
+            android:gravity="right"
+            android:padding="3dip"
+            android:layout_marginRight="55dp"/>
+    </TableRow>
+    <TableRow>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/asian_female1"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:text="Rosemary Nam"
+            android:fontFamily="serif-monospace"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:padding="3dip" />
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:text="http://flickr.com/user..."
+            android:gravity="right"
+            android:padding="3dip"
+            android:layout_marginRight="55dp"/>
+    </TableRow>
+    <TableRow>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/asian_male4"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:text="John Choi"
+            android:fontFamily="serif-monospace"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:padding="3dip" />
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:text="not shopped, just basi..."
+            android:gravity="right"
+            android:padding="3dip"
+            android:layout_marginRight="55dp"/>
+    </TableRow>
+    <TableRow>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/asian_male5"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:text="Nathan Choi"
+            android:fontFamily="serif-monospace"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:padding="3dip" />
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:textStyle="italic"
+            android:text="No reply yet."
+            android:gravity="right"
+            android:layout_marginRight="55dp"/>
+    </TableRow>
+    <TableRow>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/white_girl4"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:text="Purna Banerj"
+            android:fontFamily="serif-monospace"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:padding="3dip" />
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:textStyle="italic"
+            android:text="No reply yet."
+            android:gravity="right"
+            android:padding="3dip"
+            android:layout_marginRight="55dp"/>
+    </TableRow>
+    <TableRow>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/white_girl3"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:text="Marissa Boyd"
+            android:fontFamily="serif-monospace"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:padding="3dip" />
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:textStyle="italic"
+            android:text="No reply yet."
+            android:gravity="right"
+            android:padding="3dip"
+            android:layout_marginRight="55dp"/>
+    </TableRow>
+    <TableRow>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/white_male2"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:text="Ilya Kreynin"
+            android:fontFamily="serif-monospace"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:padding="3dip" />
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:text="You too!"
+            android:gravity="right"
+            android:padding="3dip"
+            android:layout_marginRight="55dp"/>
+    </TableRow>
+    <TableRow>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/white_girl2"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:text="Nina Korni.."
+            android:fontFamily="serif-monospace"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:padding="3dip" />
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:text="good luck finding so..."
+            android:gravity="right"
+            android:layout_marginRight="55dp"/>
+    </TableRow>
+    <TableRow>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/white_girl1"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:text="Rudy Gotat"
+            android:fontFamily="serif-monospace"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:padding="3dip" />
+    <TextView
+        android:layout_gravity="center_vertical"
+        android:text=" maybe. I'll get back to ..."
+        android:gravity="right"
+        android:padding="3dip"
+        android:layout_marginRight="55dp"/>
+</TableRow>
+    <TableRow>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/white_male3"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:layout_gravity="center_vertical"
+        android:text="Eli Otis"
+        android:fontFamily="serif-monospace"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:padding="3dip" />
+    <TextView
+        android:layout_gravity="center_vertical"
+        android:textStyle="italic"
+        android:text="No reply yet."
+        android:gravity="right"
+        android:padding="3dip"
+        android:layout_marginRight="55dp"/>
+</TableRow>
+    <TableRow>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/asian_girl4"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:text="Joy Kim"
+            android:fontFamily="serif-monospace"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:padding="3dip" />
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:text="thank you!!!"
+            android:gravity="right"
+            android:padding="3dip"
+            android:layout_marginRight="55dp"/>
+    </TableRow>
+</TableLayout>
+</ScrollView>
