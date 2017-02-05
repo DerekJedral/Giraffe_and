@@ -10,7 +10,8 @@
         android:src="@drawable/main_background"
         android:scaleType="centerCrop"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
     <Button
         android:id="@+id/employer_button_login"
         android:text="Employer Login"

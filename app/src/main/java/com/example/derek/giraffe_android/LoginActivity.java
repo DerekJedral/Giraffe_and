@@ -1,7 +1,6 @@
 package com.example.derek.giraffe_android;
 
 import android.app.Activity;
-import android.app.Fragment;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -12,6 +11,7 @@ public class LoginActivity extends Activity {
 
     Button employerButton;
     Button employeeButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
