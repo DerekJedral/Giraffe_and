@@ -9,13 +9,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-public class ProfileEditFragment extends Fragment {
+public class LandingDefaultFragment extends Fragment{
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.profile_edit_fragment, container,
+        View v = inflater.inflate(R.layout.landing_default_fragment, container,
                 false);
         return v;
     }
-
 }

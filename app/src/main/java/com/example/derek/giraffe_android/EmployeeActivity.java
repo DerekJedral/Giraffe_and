@@ -14,6 +14,7 @@ import android.widget.Button;
 
 public class EmployeeActivity extends FragmentActivity {
     ProfileEditFragment profileEditFragment;
+    LandingDefaultFragment landingDefaultFragment;
     Fragment settingFragment;
     FragmentManager fm;
     @Override
@@ -22,6 +23,7 @@ public class EmployeeActivity extends FragmentActivity {
         setContentView(R.layout.activity_employee_home);
         fm  = this.getSupportFragmentManager();
         profileEditFragment = new ProfileEditFragment();
+        landingDefaultFragment = new LandingDefaultFragment();
     }
 
     @Override
@@ -31,14 +33,14 @@ public class EmployeeActivity extends FragmentActivity {
             Log.d("Crash","profileEditFragment is null");
         }
         FragmentTransaction ft = fm.beginTransaction();
-        ft.add(R.id.fragment_holder, profileEditFragment).commit();
+        ft.add(R.id.fragment_holder, landingDefaultFragment).commit();
         final Button b1 = (Button)findViewById(R.id.profileSettings);
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 b1.setBackgroundColor(Color.parseColor("#999999"));
                 FragmentTransaction ft = fm.beginTransaction();
-                ft.setCustomAnimations(R.anim.slide_in_left, R.anim.slide_out_right);
+                ft.setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left);
                 ft.replace(R.id.fragment_holder, profileEditFragment);
                 ft.commit();
             }
