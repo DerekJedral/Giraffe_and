@@ -13,7 +13,7 @@
         android:layout_height="match_parent"
         android:orientation="horizontal"> <!-- linear layout for the top portion -->
         <ImageView
-            android:src="@drawable/test_icon"
+            android:src="@drawable/asian_female2"
             android:layout_width="125dp"
             android:layout_height="125dp"
             android:scaleType="centerCrop"/> <!-- profile photo -->
